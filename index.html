@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bobiza Parfums | بوبيزا للعطور</title>
+  <meta name="description" content="Bobiza Parfums - عطور فاخرة بجودة عالمية | Parfums de luxe de qualité mondiale" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cormorant+Garamond:wght@300;400;500;600&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">B</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-b">B</span><span class="logo-rest">OBIZA</span>
+        <span class="logo-sub" data-ar="للعطور" data-fr="Parfums">للعطور</span>
+      </a>
+      <div class="nav-links">
+        <a href="#products" data-ar="العطور" data-fr="Parfums">العطور</a>
+        <a href="#about" data-ar="عن بوبيزا" data-fr="À propos">عن بوبيزا</a>
+        <a href="#reviews" data-ar="آراء العملاء" data-fr="Avis">آراء العملاء</a>
+        <a href="#contact" data-ar="تواصل معنا" data-fr="Contact">تواصل معنا</a>
+      </div>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="btn-ar" onclick="setLang('ar')">AR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" id="btn-fr" onclick="setLang('fr')">FR</button>
+        </div>
+        <a href="https://wa.me/212778214962" target="_blank" class="nav-whatsapp" title="WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+        </a>
+        <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#products" data-ar="العطور" data-fr="Parfums">العطور</a>
+      <a href="#about" data-ar="عن بوبيزا" data-fr="À propos">عن بوبيزا</a>
+      <a href="#reviews" data-ar="آراء العملاء" data-fr="Avis">آراء العملاء</a>
+      <a href="#contact" data-ar="تواصل معنا" data-fr="Contact">تواصل معنا</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg">
+      <div class="hero-overlay"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge" data-ar="✦ عطور فاخرة ✦" data-fr="✦ Parfums de Luxe ✦">✦ عطور فاخرة ✦</div>
+      <h1 class="hero-brand">
+        <span class="brand-line-1">BOBIZA</span>
+        <span class="brand-line-2" data-ar="للعطور" data-fr="PARFUMS">للعطور</span>
+      </h1>
+      <p class="hero-tagline" data-ar="الفخامة في كل قطرة" data-fr="Le luxe dans chaque goutte">الفخامة في كل قطرة</p>
+      <div class="hero-cta">
+        <a href="#products" class="btn-primary" data-ar="تسوق الآن" data-fr="Acheter Maintenant">تسوق الآن</a>
+        <a href="https://wa.me/212778214962?text=مرحباً%20أريد%20الاستفسار%20عن%20عطور%20بوبيزا" target="_blank" class="btn-whatsapp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          <span data-ar="اطلب عبر واتساب" data-fr="Commander via WhatsApp">اطلب عبر واتساب</span>
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span data-ar="اكتشف" data-fr="Découvrir">اكتشف</span>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section id="social-proof">
+    <div class="proof-container">
+      <div class="proof-item reveal">
+        <div class="proof-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 7h6m0 10v-3m-3 3v-6m-3 3v-2m9-8H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V9a2 2 0 00-2-2z"/></svg>
+        </div>
+        <div class="proof-number" data-target="274000">0</div>
+        <div class="proof-label" data-ar="متابع تيك توك" data-fr="Abonnés TikTok">متابع تيك توك</div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item reveal">
+        <div class="proof-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        </div>
+        <div class="proof-number" data-target="5800000">0</div>
+        <div class="proof-label" data-ar="إعجاب تيك توك" data-fr="J'aime TikTok">إعجاب تيك توك</div>
+      </div>
+      <div class="proof-divider"></div>
+      <div class="proof-item reveal">
+        <div class="proof-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </div>
+        <div class="proof-number" data-target="111000">0</div>
+        <div class="proof-label" data-ar="متابع إنستغرام" data-fr="Abonnés Instagram">متابع إنستغرام</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST BADGES -->
+  <section id="trust">
+    <div class="trust-container">
+      <div class="trust-item reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+        </div>
+        <h3 data-ar="توصيل سريع" data-fr="Livraison Rapide">توصيل سريع</h3>
+        <p data-ar="24 - 72 ساعة لجميع المدن" data-fr="24 - 72h dans toutes les villes">24 - 72 ساعة لجميع المدن</p>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        </div>
+        <h3 data-ar="جودة مضمونة" data-fr="Qualité Garantie">جودة مضمونة</h3>
+        <p data-ar="عطور أصيلة 100% بأعلى جودة" data-fr="Parfums 100% authentiques, qualité supérieure">عطور أصيلة 100% بأعلى جودة</p>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+        </div>
+        <h3 data-ar="الدفع عند الاستلام" data-fr="Paiement à la Livraison">الدفع عند الاستلام</h3>
+        <p data-ar="ادفع فقط عندما تستلم طلبك" data-fr="Payez uniquement à la réception de votre commande">ادفع فقط عندما تستلم طلبك</p>
+      </div>
+      <div class="trust-item reveal">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+        </div>
+        <h3 data-ar="دعم على مدار الساعة" data-fr="Support 24/7">دعم على مدار الساعة</h3>
+        <p data-ar="فريقنا في خدمتك دائماً" data-fr="Notre équipe est toujours à votre service">فريقنا في خدمتك دائماً</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+    <div class="section-header reveal">
+      <div class="section-tag" data-ar="✦ مجموعتنا ✦" data-fr="✦ Notre Collection ✦">✦ مجموعتنا ✦</div>
+      <h2 data-ar="العطور الفاخرة" data-fr="Parfums de Luxe">العطور الفاخرة</h2>
+      <p data-ar="اكتشف مجموعتنا المختارة بعناية من أرقى العطور" data-fr="Découvrez notre sélection raffinée des parfums les plus précieux">اكتشف مجموعتنا المختارة بعناية من أرقى العطور</p>
+    </div>
+
+    <div class="filters-wrap">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" id="searchInput" placeholder="ابحث عن عطر..." data-ar-placeholder="ابحث عن عطر..." data-fr-placeholder="Rechercher un parfum..." />
+      </div>
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all" data-ar="الكل" data-fr="Tous">الكل</button>
+        <button class="filter-btn" data-filter="men" data-ar="رجالي" data-fr="Homme">رجالي</button>
+        <button class="filter-btn" data-filter="women" data-ar="نسائي" data-fr="Femme">نسائي</button>
+        <button class="filter-btn" data-filter="unisex" data-ar="مشترك" data-fr="Unisexe">مشترك</button>
+      </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+      <!-- Filled by JS -->
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-image reveal">
+        <img src="https://images.unsplash.com/photo-1549558549-415fe4c37b60?w=800&q=80" alt="Bobiza Parfums" loading="lazy" />
+        <div class="about-image-accent"></div>
+      </div>
+      <div class="about-content reveal">
+        <div class="section-tag" data-ar="✦ قصتنا ✦" data-fr="✦ Notre Histoire ✦">✦ قصتنا ✦</div>
+        <h2 data-ar="من هي بوبيزا؟" data-fr="Qui est Bobiza?">من هي بوبيزا؟</h2>
+        <p data-ar="بوبيزا علامة تجارية فاخرة للعطور أسستها مؤثرة شغوفة بعالم العطور والرقي. مع أكثر من 274 ألف متابع على تيك توك و111 ألف على إنستغرام، نجحت في بناء مجتمع يؤمن بأن الفخامة ليست حكراً على أحد." data-fr="Bobiza est une marque de parfums de luxe fondée par une influenceuse passionnée par le monde des parfums et du raffinement. Avec plus de 274K abonnés sur TikTok et 111K sur Instagram, elle a su créer une communauté qui croit que le luxe est accessible à tous.">
+          بوبيزا علامة تجارية فاخرة للعطور أسستها مؤثرة شغوفة بعالم العطور والرقي. مع أكثر من 274 ألف متابع على تيك توك و111 ألف على إنستغرام، نجحت في بناء مجتمع يؤمن بأن الفخامة ليست حكراً على أحد.
+        </p>
+        <p data-ar="كل عطر في مجموعتنا يُصنع بعناية فائقة باستخدام أجود المكونات من حول العالم، ليمنحك تجربة حسية لا تُنسى تدوم طوال اليوم." data-fr="Chaque parfum de notre collection est élaboré avec un soin extrême en utilisant les meilleurs ingrédients du monde entier, pour vous offrir une expérience sensorielle inoubliable qui dure toute la journée.">
+          كل عطر في مجموعتنا يُصنع بعناية فائقة باستخدام أجود المكونات من حول العالم، ليمنحك تجربة حسية لا تُنسى تدوم طوال اليوم.
+        </p>
+        <div class="about-stats">
+          <div class="about-stat">
+            <span class="stat-num">+7</span>
+            <span class="stat-label" data-ar="عطور حصرية" data-fr="Parfums Exclusifs">عطور حصرية</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">+5K</span>
+            <span class="stat-label" data-ar="عميل سعيد" data-fr="Clients Satisfaits">عميل سعيد</span>
+          </div>
+          <div class="about-stat">
+            <span class="stat-num">100%</span>
+            <span class="stat-label" data-ar="جودة مضمونة" data-fr="Qualité Garantie">جودة مضمونة</span>
+          </div>
+        </div>
+        <a href="https://wa.me/212778214962?text=مرحباً%20أريد%20معرفة%20المزيد%20عن%20بوبيزا" target="_blank" class="btn-primary" data-ar="تواصل معنا" data-fr="Nous Contacter">تواصل معنا</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY BANNER -->
+  <section id="delivery-banner">
+    <div class="delivery-content">
+      <div class="delivery-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+      </div>
+      <p data-ar="🚚 التوصيل خلال 24-72 ساعة لجميع المدن — الدفع عند الاستلام" data-fr="🚚 Livraison en 24-72h dans toutes les villes — Paiement à la livraison">
+        🚚 التوصيل خلال 24-72 ساعة لجميع المدن — الدفع عند الاستلام
+      </p>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section id="reviews">
+    <div class="section-header reveal">
+      <div class="section-tag" data-ar="✦ تقييماتكم ✦" data-fr="✦ Vos Avis ✦">✦ تقييماتكم ✦</div>
+      <h2 data-ar="ماذا يقول عملاؤنا" data-fr="Ce que disent nos clients">ماذا يقول عملاؤنا</h2>
+    </div>
+    <div class="reviews-grid" id="reviewsGrid">
+      <!-- Filled by JS -->
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="logo-b">B</span><span class="logo-rest">OBIZA</span>
+        </div>
+        <p data-ar="الفخامة في كل قطرة" data-fr="Le luxe dans chaque goutte">الفخامة في كل قطرة</p>
+        <div class="footer-social">
+          <a href="https://tiktok.com/@bobiza1" target="_blank" class="social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.67a8.18 8.18 0 004.78 1.52V6.74a4.85 4.85 0 01-1.01-.05z"/></svg>
+          </a>
+          <a href="https://instagram.com/bobiza1" target="_blank" class="social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/212778214962" target="_blank" class="social-link" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4 data-ar="روابط سريعة" data-fr="Liens Rapides">روابط سريعة</h4>
+        <a href="#products" data-ar="عطورنا" data-fr="Nos Parfums">عطورنا</a>
+        <a href="#about" data-ar="من نحن" data-fr="Qui sommes-nous">من نحن</a>
+        <a href="#reviews" data-ar="تقييمات العملاء" data-fr="Avis Clients">تقييمات العملاء</a>
+      </div>
+      <div class="footer-contact">
+        <h4 data-ar="تواصل معنا" data-fr="Contactez-nous">تواصل معنا</h4>
+        <a href="tel:0778214962" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+          07.78.21.49.62
+        </a>
+        <a href="https://wa.me/212778214962" target="_blank" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp
+        </a>
+        <a href="https://tiktok.com/@bobiza1" target="_blank" class="contact-item">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.32 6.32 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.67a8.18 8.18 0 004.78 1.52V6.74a4.85 4.85 0 01-1.01-.05z"/></svg>
+          @bobiza1
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-ar="© 2025 بوبيزا للعطور. جميع الحقوق محفوظة." data-fr="© 2025 Bobiza Parfums. Tous droits réservés.">© 2025 بوبيزا للعطور. جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+
+  <!-- PRODUCT MODAL -->
+  <div id="productModal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+      <div class="modal-body" id="modalBody">
+        <!-- Filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WA BUTTON -->
+  <a href="https://wa.me/212778214962" target="_blank" class="floating-wa" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="wa-pulse"></span>
+  </a>
+
+  <script src="app.js"></script>
+</body>
+</html>
