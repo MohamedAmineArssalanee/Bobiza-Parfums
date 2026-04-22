@@ -2,8 +2,8 @@
   "products": [
     {
       "id": 2,
-      "name_ar": "فجر باريس",
-      "name_fr": "Aube de Paris",
+      "name_ar": "أزرق شانيل",
+      "name_fr": "Bleu De Chanel",
       "price": 520,
       "image": "https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=600&q=80",
       "description_ar": "إلهام من فجر باريس الذهبي، عطر زهري عصري يجمع بين أناقة الفرنسية وروح المشرق.",
@@ -22,8 +22,8 @@
     },
     {
       "id": 3,
-      "name_ar": "رجل الصحراء",
-      "name_fr": "Homme du Désert",
+      "name_ar": "كوكو نوار شانيل",
+      "name_fr": "Coco Noir Chanelt",
       "price": 480,
       "image": "https://images.unsplash.com/photo-1594035910387-fea47794261f?w=600&q=80",
       "description_ar": "شخصية قوية وجذابة، عطر مستوحى من حرارة الصحراء وعمق الليل، للرجل الواثق من نفسه.",
